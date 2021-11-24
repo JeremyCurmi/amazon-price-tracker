@@ -43,6 +43,4 @@ def get_price(response: Response) -> float:
     title = get_item_title(soup)
     price = get_item_price(soup)
     shipping = get_item_shipping(soup)
-    print(price)
-    print(shipping)
     return price + shipping    
