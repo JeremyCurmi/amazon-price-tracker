@@ -1,6 +1,11 @@
 import logging
 
-logging.basicConfig(format="%(asctime)s - %(message)s", level=logging.INFO)
+logging.basicConfig(
+    format="%(asctime)s - %(message)s",
+    level=logging.INFO,
+    # filename=f"log/logging.txt",
+    # filemode="a",
+)
 
 
 def has_price_decreased(price: float, max_price: float):
